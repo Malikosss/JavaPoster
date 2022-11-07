@@ -1,14 +1,5 @@
 public class Poster {
-    protected String[] movies = new String[0];
-    protected int maxNumberOfMovies;
-
-    public Poster() {
-        this.maxNumberOfMovies = 10;
-    }
-
-    public Poster(int maxNumberOfMovies) {
-        this.maxNumberOfMovies = maxNumberOfMovies;
-    }
+    String[] movies = new String[0];
 
     public void addMovie(String movie) {
         String[] tmp = new String[movies.length + 1];
@@ -19,22 +10,28 @@ public class Poster {
         movies = tmp;
     }
 
+    private int maxNumberOfMovies = 10;
+
+    public Poster(int maxNumberOfMovies) {
+
+        this.maxNumberOfMovies = maxNumberOfMovies;
+    }
+
+    public Poster() {
+    }
+
+
     public String[] findAll() {
+
         return movies;
     }
 
-    public String[] findLast(int maxNumberOfMovies) {
-        int reverseNumber;
-        if (movies.length > maxNumberOfMovies) {
-            reverseNumber = maxNumberOfMovies;
-        } else {
-            reverseNumber = movies.length;
+    public void findLast() {
+        String[] tmp = new String[maxNumberOfMovies];
+        for (int i = 0; i < maxNumberOfMovies; i++) {
+            tmp[i] = movies[movies.length - 1 - i];
         }
-
-        String[] reverse = new String[reverseNumber];
-        for (int i = 0; i < reverse.length; i++) {
-            reverse[i] = movies[movies.length - 1 - i];
-        }
-        return reverse;
+        movies = tmp;
     }
+
 }
