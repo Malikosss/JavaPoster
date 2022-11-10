@@ -4,19 +4,19 @@ import org.junit.jupiter.api.Test;
 
 public class PosterTest {
     Poster repo = new Poster();
-    
+
 
     PurchaseMovie film = new PurchaseMovie(1, "movie");
     PurchaseMovie film2 = new PurchaseMovie(2, "movie2");
-    PurchaseMovie film3 = new PurchaseMovie(3, "Maska");
-    PurchaseMovie film4 = new PurchaseMovie(4, "Up!");
-    PurchaseMovie film5 = new PurchaseMovie(5, "Friends");
-    PurchaseMovie film6 = new PurchaseMovie(6, "Doctor House");
-    PurchaseMovie film7 = new PurchaseMovie(7, "Avatar");
-    PurchaseMovie film8 = new PurchaseMovie(8, "Blandshop");
-    PurchaseMovie film9 = new PurchaseMovie(9, "Trolls");
-    PurchaseMovie film10 = new PurchaseMovie(10, "Humans");
-    PurchaseMovie film11 = new PurchaseMovie(11, "Office");
+    PurchaseMovie film3 = new PurchaseMovie(3, "movie3");
+    PurchaseMovie film4 = new PurchaseMovie(4, "movie4");
+    PurchaseMovie film5 = new PurchaseMovie(5, "movie5");
+    PurchaseMovie film6 = new PurchaseMovie(6, "movie6");
+    PurchaseMovie film7 = new PurchaseMovie(7, "movie7");
+    PurchaseMovie film8 = new PurchaseMovie(8, "movie8");
+    PurchaseMovie film9 = new PurchaseMovie(9, "movie9");
+    PurchaseMovie film10 = new PurchaseMovie(10, "movie10");
+    PurchaseMovie film11 = new PurchaseMovie(11, "movie11");
 
 
     @Test
