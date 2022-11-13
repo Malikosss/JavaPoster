@@ -73,9 +73,9 @@ public class PosterTest {
         repo.addMovie("movie9");
         repo.addMovie("movie10");
         repo.addMovie("movie11");
-        repo.findLast();
+
         String[] expected = {"movie11", "movie10", "movie9", "movie8", "movie7", "movie6", "movie5", "movie4", "movie3", "movie2"};
-        String[] actual = repo.findAll();
+        String[] actual = repo.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
     }

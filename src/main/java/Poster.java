@@ -16,12 +16,13 @@ public class Poster {
         return movies;
     }
 
-    public void findLast() {
+    public String[] findLast() {
         String[] tmp = new String[maxNumberOfMovies];
         for (int i = 0; i < maxNumberOfMovies; i++) {
             tmp[i] = movies[movies.length - 1 - i];
         }
         movies = tmp;
+        return tmp;
     }
 
     public void addMovie(String movie) {
