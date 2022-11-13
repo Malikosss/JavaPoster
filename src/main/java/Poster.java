@@ -1,15 +1,5 @@
 public class Poster {
-    String[] movies = new String[0];
-
-    public void addMovie(String movie) {
-        String[] tmp = new String[movies.length + 1];
-        for (int i = 0; i < movies.length; i++) {
-            tmp[i] = movies[i];
-        }
-        tmp[movies.length] = movie;
-        movies = tmp;
-    }
-
+    private String[] movies = new String[0];
     private int maxNumberOfMovies = 10;
 
     public Poster(int maxNumberOfMovies) {
@@ -31,6 +21,15 @@ public class Poster {
         for (int i = 0; i < maxNumberOfMovies; i++) {
             tmp[i] = movies[movies.length - 1 - i];
         }
+        movies = tmp;
+    }
+
+    public void addMovie(String movie) {
+        String[] tmp = new String[movies.length + 1];
+        for (int i = 0; i < movies.length; i++) {
+            tmp[i] = movies[i];
+        }
+        tmp[movies.length] = movie;
         movies = tmp;
     }
 
